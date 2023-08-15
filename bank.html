@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robber The Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h1 class="text-5xl text-center mt-20">Hey, I'm here to <span class="font-bold text-orange-950">robber Your</span> Money</h1>
+       </header>
+       <main>
+        <section class="my-12  w-9/12 mx-auto">
+            <div class="grid grid-cols-2 lg:grid-cols-3 gap-5">
+                <div class="bg-red-100 p-12 rounded-lg">
+                    <h3 class="text-2xl">Deposit</h3>
+                    <h4 class="text-5xl">$00</h4>
+                </div>
+                <div class="bg-zinc-400 p-12 rounded-lg">
+                    <h3 class="text-2xl">Withdraw</h3>
+                    <h4 class="text-5xl">$00</h4>
+                </div>
+                <div class="bg-stone-500 p-12 rounded-lg">
+                    <h3 class="text-2xl">Balance</h3>
+                    <h4 class="text-5xl">$11,817</h4>
+                </div>
+            </div>
+        </section>
+        <!-- deposit and withdraw section start -->
+        <section class="my-12 w-9/12 mx-auto">
+            <div class="grid lg:grid-cols-2 gap-5">
+                <div class="bg-orange-100 p-12 mt-20 rounded-lg text-center">
+                    <h3 class="text-3xl">Please Deposit</h3>
+                    <input type="text" name="" placeholder="Please Type your deposit amount " id="" class="block w-9/12 mx-auto px-3 py-2 rounded-lg outline-none my-5">
+                    <button class="bg-gradient-to-r from-cyan-500 to-blue-500 px-5 py-3 rounded-lg text-2xl  hover:text-white">Deposit</button>
+                </div>
+                <div class="bg-emerald-200 p-12 mt-20 rounded-lg text-center">
+                    <h3 class="text-3xl">Please withdraw</h3>
+                    <input type="text" name="" placeholder="Please Type your withdraw amount " id="" class="block w-9/12 mx-auto px-3 py-2 rounded-lg outline-none my-5">
+                    <button class="bg-gradient-to-r from-cyan-500 to-blue-500 px-5 py-3 rounded-lg text-2xl  hover:text-white">Withdraw</button>
+                </div>
+            </div>
+        </section>
+       </main>
+
+       <script src="./js/deposit.js"></script>
+</body>
+</html>
