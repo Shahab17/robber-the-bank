@@ -15,7 +15,7 @@ document.getElementById('btn-submit').addEventListener('click', function(){
    
     // DANGER: DO NOT VERIFY email and password on the client side this way
     // step-4: verify email and password
-    if( email == 'shahabmat@gmail.com' && password == 'TAMsha17'){
+    if( email == 'shahabmat@gmail.com' && password == '12345'){
         location.href = 'bank.html';
     }else{
         alert('matha tik kor beta mal');
