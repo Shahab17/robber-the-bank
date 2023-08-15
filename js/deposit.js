@@ -1,10 +1,18 @@
 // step-1: add event listener to the deposit button
-document.getElementById('btn-deposit').addEventListener('click', function(){
+document.getElementById('btn-deposit').addEventListener('click', function () {
     // step-2: get the deposit amount from the deposit input field
     // for Input field use ".value" to the value inside the input field
     const depositField = document.getElementById('deposit-field');
-     const newDepositAmountString = depositField.value;
-     const newDepositAmount = parseFloat(newDepositAmountString); // eitar dara "string" theke 'number' a convert kora hoiche parseFloat diye
+    const newDepositAmountString = depositField.value;
+    const newDepositAmount = parseFloat(newDepositAmountString); // eitar dara "string" theke 'number' a convert kora hoiche parseFloat diye
+
+    // clear the deposit field
+    depositField.value = '';
+
+    if (isNaN(newDepositAmount)) {
+        alert('please provide a number');
+        return;
+    }
 
     // step-3: get the current deposit total
     // for non-input(element other than input, textarea)
@@ -25,8 +33,5 @@ document.getElementById('btn-deposit').addEventListener('click', function(){
     const currentBalanceTotal = previousBalanceTotal + newDepositAmount;
     //set the balance total
     balanceTotalElement.innerText = currentBalanceTotal;
-     
 
-    // clear the deposit field
-    depositField.value = '';
 })
