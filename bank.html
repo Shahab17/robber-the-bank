@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <h1 class="text-5xl text-center mt-20">Hey, I'm here to <span class="font-bold text-orange-950">robber Your</span> Money</h1>
+        <h1 class="text-5xl text-center mt-20">Hey, I'm here to <span class="font-bold text-orange-950">Steal Your</span> Money</h1>
        </header>
        <main>
         <section class="my-12  w-9/12 mx-auto">
@@ -19,7 +19,7 @@
                 </div>
                 <div class="bg-zinc-400 p-12 rounded-lg">
                     <h3 class="text-2xl">Withdraw</h3>
-                    <h4 class="text-5xl">$00</h4>
+                    <h4 class="text-5xl">$<span id="withdraw-total">00</span></h4>
                 </div>
                 <div class="bg-stone-500 p-12 rounded-lg">
                     <h3 class="text-2xl">Balance</h3>
@@ -37,13 +37,14 @@
                 </div>
                 <div class="bg-emerald-200 p-12 mt-20 rounded-lg text-center">
                     <h3 class="text-3xl">Please withdraw</h3>
-                    <input type="text" name="" placeholder="Please Type your withdraw amount " id="" class="block w-9/12 mx-auto px-3 py-2 rounded-lg outline-none my-5">
-                    <button class="bg-gradient-to-r from-cyan-500 to-blue-500 px-5 py-3 rounded-lg text-2xl  hover:text-white">Withdraw</button>
+                    <input type="text" name="" placeholder="Please Type your withdraw amount " id="withdraw-field" class="block w-9/12 mx-auto px-3 py-2 rounded-lg outline-none my-5">
+                    <button id="btn-withdraw" class="bg-gradient-to-r from-cyan-500 to-blue-500 px-5 py-3 rounded-lg text-2xl  hover:text-white">Withdraw</button>
                 </div>
             </div>
         </section>
        </main>
 
        <script src="./js/deposit.js"></script>
+       <script src="./js/withdraw.js"></script>
 </body>
 </html>
